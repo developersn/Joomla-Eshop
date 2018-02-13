@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.0" type="eshopplugin" group="payment">
+	<name>SN_ESHOP</name>
+	<author>JOOMI.IR IT Group</author>
+	<creationDate>August 2015</creationDate>
+	<copyright>Copyright (C) 2011-2015 GavickPro. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>info@joomi.ir</authorEmail>
+	<authorUrl>www.joomi.ir</authorUrl>
+	<version>1.0.0</version>
+	<description>SN_ESHOP_DESCRIPTION</description>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/administrator/components/com_eshop/elements">
+
+				<field name="sn_pin" type="text" default="" label="پین درگاه (API)" description="پین درگاه خود را وارد نمایید"/>
+				<field name="sn_currency" type="list" default="1" label="واحد پول سایت" description="واحد پولی که در سایت استفاده میکنید">
+					<option value="0">تومان</option>
+					<option value="1">ریال</option>
+				</field>
+				<field name="sn_send_payer_info" type="list" default="1" label="ارسال اطلاعات پرداخت کننده" description="با فعال کردن این گزینه، اطلاعات پرداخت کننده (ایمیل، موبایل و ...) برای درگاه ارسال می شود">
+					<option value="1">فعال</option>
+					<option value="0">غیرفعال</option>
+				</field>
+
+			</fieldset>
+		</fields>
+	</config>
+
+	<files>
+		<filename>os_sneshop.php</filename>
+	</files>
+	
+</install>
